@@ -1,0 +1,770 @@
+Sub Ingresar_polinomio()
+'
+' Ingresar_polinomio
+'
+
+'
+existe = False
+If Cells(3, 3) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+Dim num As Integer
+Dim x As Integer
+Dim vari As String
+Rows("5:5").Select
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    Selection.Borders(xlEdgeBottom).LineStyle = xlNone
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Selection.ClearContents
+    num = Cells(3, 3)
+    For x = 1 To (num + 1)
+    vari = CStr(num - x + 1)
+    Cells(5, (x * 2) + 2) = "x^" & vari
+    Cells(5, (x * 2) + 2).Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .Color = 49407
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Next
+    For x = 1 To (num + 1)
+    Cells(5, (x * 2) + 1).Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Next
+    Cells(5, 3).Select
+End Sub
+Sub Macro12()
+'
+' Macro12 Macro
+'
+
+'
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .Color = 49407
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Range("L10").Select
+End Sub
+Sub Macro13()
+'
+' Macro13 Macro
+'
+
+'
+    Range("M5").Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    Selection.Borders(xlEdgeBottom).LineStyle = xlNone
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+End Sub
+Sub biseccion()
+'
+' biseccion Macro
+'
+
+'
+Rows("9:9").Select
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    Selection.Borders(xlEdgeBottom).LineStyle = xlNone
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Selection.ClearContents
+    Range("D7").Select
+    ActiveCell.FormulaR1C1 = "intervaluo"
+    Range("E7").Select
+    ActiveCell.FormulaR1C1 = "a"
+    Range("G7").Select
+    ActiveCell.FormulaR1C1 = "b"
+    Range("J7").Select
+    ActiveCell.FormulaR1C1 = "error"
+    Range("J7,K7,D7:H7").Select
+    Range("H7").Activate
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("D7,E7,G7,J7").Select
+    Range("J7").Activate
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent4
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("F7").Select
+End Sub
+Sub Newton()
+'
+' Newton Macro
+'
+
+'
+Rows("13:13").Select
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    Selection.Borders(xlEdgeBottom).LineStyle = xlNone
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Selection.ClearContents
+Range("B11").Select
+    ActiveCell.FormulaR1C1 = "Tabla de resultados"
+    Range("B12").Select
+    ActiveCell.FormulaR1C1 = "Newton"
+    Range("C13").Select
+    ActiveCell.FormulaR1C1 = "x_n"
+    Range("D13").Select
+    ActiveCell.FormulaR1C1 = "f(x_n)"
+    Range("E13").Select
+    ActiveCell.FormulaR1C1 = "f´(x_n)"
+    Range("F13").Select
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    ActiveCell.FormulaR1C1 = "x_n+1"
+    Range("G13").Select
+     ActiveCell.FormulaR1C1 = "error"
+      Range("C13:G13").Select
+    Range("C13").Activate
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent4
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("B11:B12").Select
+    Range("B12").Activate
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent4
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+Rows("7:7").Select
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    Selection.Borders(xlEdgeBottom).LineStyle = xlNone
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Selection.ClearContents
+    Range("D9").Select
+    ActiveCell.FormulaR1C1 = "Pto. Inicio"
+    Range("F9").Select
+    ActiveCell.FormulaR1C1 = "error"
+    Range("D9:G9").Select
+    Range("G9").Activate
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("F9,D9").Select
+    Range("D9").Activate
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent4
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("E9").Select
+End Sub
+Sub calcular_cero()
+
+existe = False
+If Cells(3, 3) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+Dim cant As Integer
+Dim i As Integer
+Dim punto As Double
+Dim funcion As Double
+Dim Func1 As Double
+Dim Func2 As Double
+Dim Derivada As Double
+Dim num As Double
+Dim numant As Double
+Dim error As Double
+Dim errordes As Double
+funcion = 0
+Derivada = 0
+error = 0
+i = 0
+cant = Cells(3, 3)
+opcion = Cells(10, 9)
+If opcion = 2 Then
+existe = False
+If Cells(9, 7) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+existe = False
+If Cells(9, 5) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+errordes = Cells(9, 7)
+Dim Datos() As Variant
+ReDim Datos(cant + 1)
+For x = 0 To (cant)
+Datos(x) = Cells(5, ((x + 1) * 2) + 1)
+existe = False
+If Cells(5, ((x + 1) * 2) + 1) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+Next
+punto = Cells(9, 5)
+num = punto
+Do
+numant = num
+Cells(14 + i, 3) = num
+For x = 0 To (cant)
+funcion = (funcion) + (Datos(x) * ((num) ^ (cant - x)))
+Next x
+Cells(14 + i, 4) = funcion
+For x = 0 To (cant - 1)
+Derivada = (Derivada) + ((cant - x) * Datos(x) * ((num) ^ (cant - x - 1)))
+Next x
+Cells(14 + i, 5) = Derivada
+If Derivada = 0 Then
+existe = True
+End If
+If existe Then
+MsgBox "Se produjo una division entre cero revise sus datos"
+Exit Sub
+End If
+num = num - (funcion / Derivada)
+Cells(14 + i, 6) = num
+funcion = 0
+Derivada = 0
+If num = 0 Then
+existe = True
+End If
+If existe Then
+MsgBox "Se produjo una division entre cero revise sus datos"
+Exit Sub
+End If
+error = Abs((num - numant) / num)
+Cells(14 + i, 7) = error
+i = i + 1
+If i = 500 Then
+MsgBox "Fallo despues de 500 iteraciones"
+MsgBox "Advertencia los datos mostrados pueden no ser correctos"
+Exit Do
+End If
+Loop Until (error <= errordes)
+End If
+If opcion = 1 Then
+'
+' Calculob Macro
+'
+Range("B11:B12").Select
+    Range("B12").Activate
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent4
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("B11").Select
+    ActiveCell.FormulaR1C1 = "Metodo"
+    Range("B12").Select
+    ActiveCell.FormulaR1C1 = "Biseccion"
+     Range("C13").Select
+    ActiveCell.FormulaR1C1 = "f_n"
+    Range("C13").Select
+    ActiveCell.FormulaR1C1 = "a_n"
+    Range("D13").Select
+    ActiveCell.FormulaR1C1 = "b_n"
+    Range("E13").Select
+    ActiveCell.FormulaR1C1 = "f()"
+    Range("E13").Select
+    ActiveCell.FormulaR1C1 = "f(a_n)"
+    Range("F13").Select
+    ActiveCell.FormulaR1C1 = "f(b_n)"
+    Range("G13").Select
+    ActiveCell.FormulaR1C1 = "x_med"
+    Range("H13").Select
+    ActiveCell.FormulaR1C1 = "f(x_med)"
+    Range("I13").Select
+    ActiveCell.FormulaR1C1 = "Error"
+    Range("C13:I13").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .Color = 49407
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("K20").Select
+    col = 3
+    fil = 14
+    fa = 0
+    fb = 0
+    Dim norma As Double
+    Dim prr As Double
+    valor = 0
+    fmed = 0
+    resultado = 1
+    If Cells(3, 3) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+If Cells(7, 6) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+If Cells(7, 8) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+If Cells(7, 11) = "" Then
+existe = True
+End If
+If existe Then
+MsgBox "Falta informacion"
+Exit Sub
+End If
+    Range("C3").Select
+    grado = Selection
+    n = grado
+    Range("F7").Select
+    a = Selection
+    Range("H7").Select
+    b = Selection
+    Range("K7").Select
+    prr = Selection
+    If (a = b) Or (a > b) Then
+existe = True
+End If
+If existe Then
+MsgBox "Intente otra vez"
+Exit Sub
+End If
+Dim dat() As Variant
+ReDim dat(cant + 1)
+For x = 0 To (cant)
+dat(x) = Cells(5, ((x + 1) * 2) + 1)
+Next
+Func1 = 0
+Func2 = 0
+For x = 0 To (cant)
+Func1 = (Func1) + (dat(x) * ((a) ^ (cant - x)))
+Next x
+For x = 0 To (cant)
+Func2 = (Func2) + (dat(x) * ((b) ^ (cant - x)))
+Next x
+If Func1 * Func2 >= 0 Then
+existe = True
+End If
+If existe Then
+MsgBox "rango no valido"
+Exit Sub
+End If
+    Do
+        Cells(fil, 3) = a
+        Cells(fil, 4) = b
+        resultado = 1
+        col = 3
+        valor = 0
+        Range("C3").Select
+        grado = Selection
+        n = grado
+        For contador2 = 0 To grado
+            Cells(5, col).Select
+            pol = Selection
+            For i = 0 To n
+            resultado = resultado * a
+            Next i
+            valor = pol * resultado
+            fa = fa + valor
+            n = n - 1
+            col = col + 2
+            resultado = 1
+        Next contador2
+        resultado = 1
+        col = 3
+        valor = 0
+        Range("C3").Select
+        grado = Selection
+        n = grado
+        For contador3 = 0 To grado
+            Cells(5, col).Select
+            pol = Selection
+            For i = 0 To n
+            resultado = resultado * b
+            Next i
+            valor = pol * resultado
+            fb = fb + valor
+            n = n - 1
+            col = col + 2
+            resultado = 1
+        Next contador3
+        Cells(fil, 5) = fa
+        Cells(fil, 6) = fb
+        Cells(fil, 7) = (a + b) / 2
+        Cells(fil, 7).Select
+        med = Selection
+        resultado = 1
+        valor = 0
+        col = 3
+        Range("C3").Select
+        grado = Selection
+        n = grado
+        For contador4 = 0 To grado
+            Cells(5, col).Select
+            pol = Selection
+            For i = 0 To n
+            resultado = resultado * med
+            Next i
+            valor = pol * resultado
+            fmed = fmed + valor
+            n = n - 1
+            col = col + 2
+            resultado = 1
+        Next contador4
+        Cells(fil, 8) = fmed
+        norma = b - a
+        Cells(fil, 9) = norma
+        If fmed > 0 Then a = med
+        If fmed < 0 Then b = med
+        fil = fil + 1
+        fa = 0
+        fb = 0
+        fmed = 0
+        If (fil = 500) Then
+        MsgBox "Fallo despues de 500 iteraciones"
+        MsgBox "Advertencia los datos mostrados pueden no ser correctos"
+        Exit Sub
+        End If
+    Loop Until (norma <= prr)
+End If
+End Sub
+Sub Macro18()
+'
+' Macro18 Macro
+'
+
+'
+    Range("B11").Select
+    ActiveCell.FormulaR1C1 = "Tabla de resultados"
+    Range("B12").Select
+    ActiveCell.FormulaR1C1 = "Newton"
+    Range("C13").Select
+    ActiveCell.FormulaR1C1 = "x_n"
+    Range("D13").Select
+    ActiveCell.FormulaR1C1 = "f(x_n)"
+    Range("E13").Select
+    ActiveCell.FormulaR1C1 = "f´(x_n)"
+    Range("F13").Select
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    ActiveCell.FormulaR1C1 = "x_n+1"
+    Range("G13").Select
+End Sub
+Sub Borrar()
+'
+' Borrar Macro
+'
+
+'
+    ActiveWindow.SmallScroll Down:=-6
+    Range("B4:ZZ1137").Select
+    ActiveWindow.SmallScroll Down:=-4237
+    Selection.ClearContents
+    With Selection.Interior
+        .Pattern = xlNone
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("B4:ZZ16").Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    Selection.Borders(xlEdgeLeft).LineStyle = xlNone
+    Selection.Borders(xlEdgeTop).LineStyle = xlNone
+    Selection.Borders(xlEdgeBottom).LineStyle = xlNone
+    Selection.Borders(xlEdgeRight).LineStyle = xlNone
+    Selection.Borders(xlInsideVertical).LineStyle = xlNone
+    Selection.Borders(xlInsideHorizontal).LineStyle = xlNone
+    Range("D5").Select
+End Sub
+
+
